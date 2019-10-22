@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Parcial2_AP1.BLL
 {
-    class RepositorioBase<T> : IDisposable, IRepository<T> where T : class
+    public class RepositorioBase<T> : IDisposable, IRepository<T> where T : class
     {
         internal Contexto _contexto;
 
@@ -34,7 +34,7 @@ namespace Parcial2_AP1.BLL
 
         }
 
-        public bool Modificar(T entity)
+        public virtual bool Modificar(T entity)
         {
             bool paso = false;
             try
@@ -49,7 +49,7 @@ namespace Parcial2_AP1.BLL
             return paso;
         }
 
-        public bool Eliminar(int id)
+        public virtual bool Eliminar(int id)
         {
             bool paso = false;
             try
@@ -66,7 +66,7 @@ namespace Parcial2_AP1.BLL
             return paso;
         }
 
-        public T Buscar(int id)
+        public virtual T Buscar(int id)
         {
             T entity;
             try
@@ -80,7 +80,7 @@ namespace Parcial2_AP1.BLL
             return entity;
 
         }
-        public List<T> GetList(Expression<Func<T, bool>> expression)
+        public  virtual List<T> GetList(Expression<Func<T, bool>> expression)
         {
             List<T> Lista = new List<T>();
             try

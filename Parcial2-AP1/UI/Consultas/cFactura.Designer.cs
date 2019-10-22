@@ -1,6 +1,6 @@
 ﻿namespace Parcial2_AP1.UI.Consultas
 {
-    partial class ConsultaCambiarN
+    partial class cFactura
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaCambiarN));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cFactura));
             this.ConsultarButton = new System.Windows.Forms.Button();
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
             this.FiltrarComboBox = new System.Windows.Forms.ComboBox();
@@ -53,6 +53,7 @@
             this.ConsultarButton.Text = "Consultar";
             this.ConsultarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ConsultarButton.UseVisualStyleBackColor = true;
+            this.ConsultarButton.Click += new System.EventHandler(this.ConsultarButton_Click);
             // 
             // CriterioTextBox
             // 
@@ -67,7 +68,8 @@
             this.FiltrarComboBox.Items.AddRange(new object[] {
             "Todo",
             "ID",
-            "Cantidad"});
+            "Nombre",
+            "Monto"});
             this.FiltrarComboBox.Location = new System.Drawing.Point(191, 26);
             this.FiltrarComboBox.Name = "FiltrarComboBox";
             this.FiltrarComboBox.Size = new System.Drawing.Size(88, 21);
@@ -133,11 +135,11 @@
             this.ConsultaDataGridView.Size = new System.Drawing.Size(610, 363);
             this.ConsultaDataGridView.TabIndex = 54;
             // 
-            // ConsultaCambiarN
+            // ConsultaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 420);
+            this.ClientSize = new System.Drawing.Size(615, 414);
             this.Controls.Add(this.ConsultarButton);
             this.Controls.Add(this.CriterioTextBox);
             this.Controls.Add(this.FiltrarComboBox);
@@ -148,7 +150,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ConsultaDataGridView);
-            this.Name = "ConsultaCambiarN";
+            this.Name = "ConsultaFactura";
             this.Text = "ConsultaCambiarN";
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaDataGridView)).EndInit();
             this.ResumeLayout(false);

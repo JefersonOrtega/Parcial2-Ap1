@@ -56,10 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\FacturasBLL.cs" />
     <Compile Include="BLL\IRepository.cs" />
     <Compile Include="BLL\RepositorioBase.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Categorias.cs" />
+    <Compile Include="Entidades\Facturas.cs" />
+    <Compile Include="Entidades\ServicioDetalle.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,17 +71,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\Consultas\ConsultaCambiarN.cs">
+    <Compile Include="UI\Consultas\cFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Consultas\ConsultaCambiarN.Designer.cs">
-      <DependentUpon>ConsultaCambiarN.cs</DependentUpon>
+    <Compile Include="UI\Consultas\cFactura.Designer.cs">
+      <DependentUpon>cFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Registros\EjemploCambiar.cs">
+    <Compile Include="UI\Registros\rFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Registros\EjemploCambiar.Designer.cs">
-      <DependentUpon>EjemploCambiar.cs</DependentUpon>
+    <Compile Include="UI\Registros\rFactura.Designer.cs">
+      <DependentUpon>rFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\rCategorias.cs">
       <SubType>Form</SubType>
@@ -98,11 +101,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\Consultas\ConsultaCambiarN.resx">
-      <DependentUpon>ConsultaCambiarN.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Consultas\cFactura.resx">
+      <DependentUpon>cFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Registros\EjemploCambiar.resx">
-      <DependentUpon>EjemploCambiar.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Registros\rFactura.resx">
+      <DependentUpon>rFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rCategorias.resx">
       <DependentUpon>rCategorias.cs</DependentUpon>
